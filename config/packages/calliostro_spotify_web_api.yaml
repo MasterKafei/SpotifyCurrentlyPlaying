@@ -1,0 +1,9 @@
+calliostro_spotify_web_api:
+    client_id:              '%env(SPOTIFY_CLIENT_ID)%'
+    client_secret:          '%env(SPOTIFY_CLIENT_SECRET)%'
+    options:
+        auto_refresh:         true
+        auto_retry:           true
+        return_assoc:         false
+    redirect_uri:         http://127.0.0.1:8000/callback
+    token_provider:       calliostro_spotify_web_api.token_provider
